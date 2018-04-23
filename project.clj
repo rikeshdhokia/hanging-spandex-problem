@@ -7,7 +7,4 @@
                  [cc.qbits/spandex "0.6.2"]]
   :main ^:skip-aot hanging-spandex-problem.core
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}
-             :dev {:dependencies [[org.clojure/test.check "0.9.0"]
-                                  [midje "1.9.1"]]
-                   :plugins [[lein-midje "3.2.1"]]}})
+  :profiles {:uberjar {:aot :all}})

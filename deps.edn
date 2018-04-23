@@ -1,6 +1,2 @@
 {:deps
- {cc.qbits/spandex {:mvn/version "0.6.2"}}
-
- :aliases
- {:test {:extra-paths ["test"]}
-  :midje {:extra-deps {midje {:mvn/version "1.9.1"}}}}}
+ {cc.qbits/spandex {:mvn/version "0.6.2"}}}
