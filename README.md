@@ -1,12 +1,17 @@
-# hanging-spandex-problem
+# hanging-spandex
 
-Run `lein midje` and watch as your process doesn't terminate
+Issue: App code does not quit when using the Spandex client
 
-Can also run `./run-docker.sh` and tweak the docker image used in `Dockerfile`
+Steps to reproduce: 
+
+Using lein: Run `lein run` and watch as your process doesn't terminate
+
+Using clj: Install clojure CLI & Run `clj -m hanging-spandex.core`
+
+Build a jar `lein uberjar` and `java -jar target/uberjar/hanging-spandex-problem-0.1.0-SNAPSHOT-standalone.jar`
 
 Things I have tried:
 - Progressively trying leiningen versions all the way down to 2.4.3 (oldest available in Clojure docker)
 - Downgrade spandex to 0.5.0
-- Use `clojure.deps` (see `deps.edn` and run `clj -C:test -R:midje -e "(require 'hanging-spandex-problem.core-test)"`)
 - Clojure 1.8.0
 

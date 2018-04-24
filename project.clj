@@ -5,6 +5,6 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [cc.qbits/spandex "0.6.2"]]
-  :main ^:skip-aot hanging-spandex-problem.core
+  :main ^:skip-aot hanging-spandex.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
